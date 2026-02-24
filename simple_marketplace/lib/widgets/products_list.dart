@@ -22,7 +22,10 @@ class ProductsList extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(12.0),
             ),
-            padding: const EdgeInsets.only(left: 12.0, right: 12.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 12.0,
+              vertical: 8.0,
+            ),
             child: Row(
               children: [
                 const CircleAvatar(
