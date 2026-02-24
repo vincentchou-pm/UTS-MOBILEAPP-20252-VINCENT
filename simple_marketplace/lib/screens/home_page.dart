@@ -21,4 +21,21 @@ class _HomePageState extends State<HomePage> {
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
-
+        backgroundColor: const Color(0xFF7B4C80),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.person, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilePage()),
+              );
+            },
+          ),
+        ],
+      ),
+      body: const ProductsList(),
+      backgroundColor: const Color(0xFFFEF8FA),
+    );
+  }
+}
